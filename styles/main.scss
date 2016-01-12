@@ -1,0 +1,302 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+// Typography
+$base-font-family: $helvetica;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$very-light-gray: #fafafa;
+
+$base-font-color: $dark-gray;
+$base-background-color: $very-light-gray;
+
+body {
+  font-family: $base-font-family;
+  background-color: $base-background-color;
+  color: $base-font-color;
+}
+
+.first-background{
+  background-image: url('../../images/GofT.jpg');
+  background-size:cover;
+  width:100%;
+  height:650px;
+  padding-top:70px;
+}
+
+.name-block{
+  background-color:rgba(34, 34, 34, .7);
+  margin-left:25%;
+  width:50%;
+  margin-right:25%;
+  border:5px solid black;
+}
+
+.short-description{
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:50px;
+  font-family: fantasy;
+  padding:10px;
+  text-align:center;
+  color:rgb(235, 235, 235);
+}
+
+.profile-name{
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:40px;
+  font-family: fantasy;
+  text-align:center;
+  padding-top:5px;
+  color:rgb(235, 235, 235);
+  border-bottom:5px solid rgb(34, 34, 34);
+}
+
+.social-links{
+  padding:10px;
+  background-color:rgba(34, 34, 34, .9);
+}
+
+.linkedin,
+.about-me,
+.resume,
+.projects{
+  padding:3.8%;
+  font-size:20px;
+  font-family:fantasy;
+  text-decoration: none;
+  color:rgb(235, 235, 235);
+}
+
+.linkedin:hover,
+.about-me:hover,
+.resume:hover,
+.projects:hover{
+  text-decoration:underline;
+  font-weight:bold;
+  color:rgb(230, 16, 8);
+}
+
+.second-background{
+  background-image: url('../../images/wheel-of-time.jpg');
+  background-size:cover;
+  width:100%;
+  height:650px;
+}
+
+.second-background-shading{
+  background-color:rgba(34, 34, 34, .1);
+  height:650px;
+  padding-top:30px;
+}
+
+.about-me-content{
+  @include outer-container();
+  background-color:rgba(34, 34, 34, .8);
+  width:50%;
+  margin-left:25%;
+  border:5px solid black;
+  height:590px;
+}
+
+.about-me-header{
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:50px;
+  font-family:fantasy;
+  text-align:center;
+  border-bottom:3px solid rgb(34, 34, 34);
+  background-color:rgba(34, 34, 34, .7);
+  color:rgb(235, 235, 235);
+  padding-top:20px;
+}
+
+.second-nav{
+  @include span-columns(12);
+  padding-top:10px;
+  margin-right:0px;
+  border-bottom:3px solid rgb(34, 34, 34);
+}
+
+.second-top,
+.second-resume,
+.second-projects{
+  @include span-columns(4);
+  text-align:center;
+  font-size:20px;
+  font-family:fantasy;
+  text-decoration: none;
+  color:rgb(235, 235, 235);
+  margin-right:0px;
+}
+
+.second-top:hover,
+.second-resume:hover,
+.second-projects:hover{
+  text-decoration:underline;
+  font-weight:bold;
+  color:rgb(230, 16, 8);
+}
+
+.about-me-scroll{
+  overflow:scroll;
+  height:400px;
+  padding:20px;
+  margin-top:40px;
+  padding-left:10%;
+  padding-right:10%;
+}
+
+.about-me-paragraph{
+  color:rgb(235, 235, 235);
+  margin:0px;
+  font-size:20px;
+  line-height:35px;
+}
+
+.about-me-disclaimer{
+  color:rgb(235, 235, 235);
+  padding-top:10px;
+  margin:0px;
+  font-size:20px;
+  line-height:35px;
+}
+
+.skills-section{
+  color:rgb(235, 235, 235);
+  font-size:40px;
+  font-family:fantasy;
+  text-align:center;
+  margin:0px;
+  padding-top:20px;
+}
+
+.third-background{
+  background-image: url('../../images/LOTR.png');
+  background-size:cover;
+  width:100%;
+  height:650px;
+  padding-top:30px;
+}
+
+.resume-content{
+  @include outer-container();
+  background-color:rgba(34, 34, 34, .7);
+  width:50%;
+  margin-left:25%;
+  border:5px solid black;
+  height:590px;
+  //padding-top:30px;
+}
+
+.third-nav{
+  @include span-columns(12);
+  padding-top:10px;
+  margin-right:0px;
+  border-bottom:3px solid rgb(34, 34, 34);
+}
+
+.resume-header{
+  margin:0px;
+  padding:20px;
+  text-align:center;
+  color:white;
+  font-size:50px;
+  font-family:fantasy;
+  background-color:rgba(34, 34, 34, .7);
+  border-bottom:3px solid rgb(34, 34, 34);
+}
+
+.third-top,
+.third-about-me,
+.third-projects{
+  @include span-columns(4);
+  text-align:center;
+  font-size:20px;
+  font-family:fantasy;
+  text-decoration: none;
+  color:rgb(235, 235, 235);
+  margin-right:0px;
+}
+
+.third-top:hover,
+.third-about-me:hover,
+.third-projects:hover{
+  text-decoration:underline;
+  font-weight:bold;
+  color:rgb(230, 16, 8);
+}
+
+.resume-scroll{
+  overflow:scroll;
+  height:400px;
+  width:85%;
+  margin-left:7.5%;
+  line-height:28px;
+}
+
+.my-resume{
+  font-family: sans-serif;
+  margin-top:0px;
+  color:rgb(235, 235, 235);
+}
+
+.fourth-background{
+  background-image: url('../../images/marvel.jpg');
+  background-size:cover;
+  width:100%;
+  height:650px;
+  padding-top:30px;
+}
+
+.project-content{
+  @include outer-container();
+  background-color:rgba(34, 34, 34, .7);
+  width:50%;
+  margin-left:25%;
+  border:5px solid black;
+  height:590px;
+}
+
+.project-header{
+  margin:0px;
+  padding:20px;
+  text-align:center;
+  color:white;
+  font-size:50px;
+  font-family:fantasy;
+  background-color:rgba(34, 34, 34, .7);
+  border-bottom:3px solid rgb(34, 34, 34);
+}
+
+.fourth-nav{
+  @include span-columns(12);
+  padding-top:10px;
+  margin-right:0px;
+  border-bottom:3px solid rgb(34, 34, 34);
+}
+
+.fourth-top,
+.fourth-about-me,
+.fourth-resume{
+  @include span-columns(4);
+  text-align:center;
+  font-size:20px;
+  font-family:fantasy;
+  text-decoration: none;
+  color:rgb(235, 235, 235);
+  margin-right:0px;
+}
+
+.fourth-top:hover,
+.fourth-about-me:hover,
+.fourth-resume:hover{
+  text-decoration:underline;
+  font-weight:bold;
+  color:rgb(230, 16, 8);
+}
